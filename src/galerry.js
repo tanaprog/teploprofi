@@ -1,7 +1,7 @@
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
 const slide = document.querySelectorAll('.slide-image');
-const bottom = document.querySelector('.bottom');
+const circleArea = document.querySelector('.circle-area');
 
 
 let currentSlideIndex = 0;
@@ -14,24 +14,20 @@ function createElement(tag, className) {
 }
 
 function createPaginationCircle() {
-    // const div = document.createElement('div');
-    // div.className = 'pagination-circle';
     const divForCirclePagination = createElement('div', 'pagination-circle')
-    bottom.appendChild(divForCirclePagination);
+    circleArea.appendChild(divForCirclePagination);
     paginationCircle.push(divForCirclePagination);
 }
 
 function addPagination() {
-    // slide.forEach(createPaginationCircle);
-    // paginationCircle[0].classList.add('active');
+    slide.forEach(createPaginationCircle);
+    paginationCircle[0].classList.add('active');
+}
+
+function changePaginationSlide() {
     paginationCircle.forEach((circle, index) => {
         circle.addEventListener('click', () => changeSlide(index));
     })
-}
-
-function addPaginationOne() {
-    slide.forEach(createPaginationCircle);
-    paginationCircle[0].classList.add('active');
 }
 
 function removeActiveClass() {
@@ -74,12 +70,8 @@ function previousSlide() {
     changeSlide(newSlideIndex);
 }
 
-// addPagination();
-// arrowLeft.addEventListener('click', previousSlide);
-// arrowRight.addEventListener('click', nextSlide);
-
 function init() {
-    addPaginationOne();
+    changePaginationSlide();
     addPagination();
     arrowLeft.addEventListener('click', previousSlide);
     arrowRight.addEventListener('click', nextSlide);

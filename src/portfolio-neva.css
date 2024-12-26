@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --font-for-text: "Oswald", serif;
+    --color-for-text: #fff;
+    --color-for-circle-active: #464444;
+    --color-for-text-dark: rgb(32, 32, 32);
+    --copyright-color: #141414;
+    --color-for-arrow: rgb(217, 222, 223);
+    --copyright-color-text: #d4d4d4;
+    --background-color-yellow: #fda70f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,12 +45,17 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
+    color: var(--color-for-text);
     font-weight: bold;
 }
 
 .all-elements__menu {
     display: flex;
+}
+
+.h2-logo-descripnion {
+    font-size: 16px;
+    color: var(--background-color-yellow);
 }
 
 .link {
@@ -48,7 +66,7 @@ header {
 }
 
 .link:hover {
-    color: #fff;
+    color: var(--color-for-text);
 }
 
 .link-portfolio {
@@ -70,7 +88,7 @@ header {
 }
 
 .all-elements__number-phone {
-    color: #fff;
+    color: var(--color-for-text);
     font-size: 19px;
     font-weight: bold;
 }
@@ -80,7 +98,7 @@ header {
 .hpoto-and-text {
     display: flex;
     gap: 20px;
-    padding: 20px 50px;
+    padding: 20px 50px 0 50px;
 }
 
 .main-photo-port-one {
@@ -99,6 +117,8 @@ header {
     font-size: 22px;
     padding-bottom: 15px;
     text-align: center;
+    font-family: var(--font-for-text);
+    color: var(--background-color-yellow);
 }
 
 .title-portfplio-one {
@@ -109,10 +129,6 @@ header {
 
 .text-one {
     font-size: 17px;
-}
-
-span {
-    font-weight: bold;
 }
 
 .photo-1 {
@@ -128,11 +144,10 @@ span {
     justify-content: center;
     flex-direction: column;
     row-gap: 30px;
-    /* height: 100vh; */
     padding: 50px;
 }
 
-.top {
+.slider-area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,7 +172,7 @@ span {
     width: 20px;
     height: 20px;
     padding: 25px;
-    background-color: rgb(217, 222, 223);
+    background-color: var(--color-for-arrow);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -169,16 +184,16 @@ span {
 .pagination-circle {
     width: 12px;
     height: 12px;
-    border: 2px solid rgb(4, 57, 61);
+    border: 2px solid var(--color-for-text-dark);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .active {
-    background-color: #5a5c5c;
+    background-color: var(--color-for-circle-active);
 }
 
-.bottom {
+.circle-area {
     display: flex;
     column-gap: 18px;
 }
@@ -188,8 +203,6 @@ span {
 footer {
     background: -webkit-linear-gradient(360deg, #404040, #74716d, #141414);
     background: linear-gradient(360deg, #404040, #74716d, #141414);
-    /* background: -webkit-linear-gradient(0deg, #6e7272, #5cb29f);
-    background: linear-gradient(0deg, #6e7272, #5cb29f); */
     padding: 20px;
     height: 80px;
 }
@@ -202,18 +215,18 @@ footer {
 .contact-text {
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
+    color: var(--color-for-text);
 }
 
 .all-contacts {
     font-size: 18px;
-    color: #fff;
+    color: var(--color-for-text);
 }
 
 .copyright {
     height: 30px;
-    background-color: #141414;
-    color: #d4d4d4;
+    background-color: var(--copyright-color);
+    color: var(--copyright-color-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +236,7 @@ footer {
 .text-networks {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: var(--color-for-text);
     margin-bottom: 15px;
     text-align: center;
 }
@@ -278,7 +291,11 @@ footer {
     .main-photo-port-one {
         width: 400px;
         padding: 5px;
-        margin-left: 40px;
+    }
+
+    .photo-portfolio-one {
+        display: flex;
+        align-items: center;
     }
 
     .portfolio-one {
@@ -316,7 +333,7 @@ footer {
         flex-direction: column;
     }
 
-    .all-elements { 
+    .all-elements {
         gap: 5px;
     }
 
@@ -350,5 +367,9 @@ footer {
         overflow: hidden;
         border-radius: 10px;
         padding: 0 8px;
+    }
+
+    .main-photo-port-one {
+        margin-left: 40px;
     }
 }
