@@ -18,7 +18,7 @@
 }
 
 body {
-    min-width: 1000px;
+    min-width: 1100px;
 }
 
 main {
@@ -79,32 +79,56 @@ header {
 
 /*  /////////////////////    Header    /////////////////////  */
 
-.image-main-img {
+/* .image-main-img {
     position: relative;
-}
+} */
 
-.main-img {
+.image {
+    background-image: url("./img/teploprofi-pro-main.jpg");
+    background-repeat: no-repeat;
     width: 100%;
-    filter: brightness(25%);
 }
 
 .text-description-image {
-    position: absolute;
-    top: 280px;
-}
-
-.text-description-image {
-    margin-top: 20px;
-}
-
-.logo-description-image {
-    position: absolute;
-    top: 120px;
+    margin: 10px 0 50px 0;
 }
 
 .description-image {
-    padding: 0 50px;
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
+
+/* .main-img {
+    width: 100%;
+    filter: brightness(30%);
+} */
+
+/* .text-description-image {
+    position: absolute;
+    margin-top: 20px;
+    top: 280px;
+    top: 50%;
+} */
+
+/* .text-description-image {
+    background-image: url("./img/teploprofi_pro-main_foto.jpg");
+    filter: brightness(25%);
+    position: absolute;
+    top: 280px;
+    height: 100%;
+} */
+
+/* .logo-description-image {
+    position: absolute;
+    top: 120px;
+    top: 25%;
+} */
+
+/* .description-image {
+    padding: 50px;
+} */
 
 .image-logo {
     width: 350px;
@@ -114,14 +138,16 @@ header {
     color: var(--background-color-yellow);
     font-family: var(--font-for-text);
     font-size: 50px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .short-description {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    /* gap: 200px;
     position: absolute;
     top: 520px;
+    top: 90%; */
 }
 
 .div-circle {
@@ -168,6 +194,10 @@ header {
     font-weight: bold;
 }
 
+/* .image-about-us {
+    width: 600px;
+} */
+
 .description {
     font-size: 18px;
 }
@@ -175,17 +205,27 @@ header {
 /* ////////////////// why teploprofi ///////////////////////*/
 
 .why-teploprofi {
-    display: flex;
-    flex-flow: column;
-    position: relative;
+    background-image: url("./img/teploprofi-монтаж-отопления.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    /* display: flex; */
+    /* flex-flow: column;
+    position: relative; */
 }
+
+
+/* .img-why-teploprofi {
+    filter: brightness(40%);
+} */
 
 .blocks-why-teploprofi {
     display: flex;
     flex-flow: column;
-    gap: 80px;
+    justify-content: center;
+    padding: 100px 50px;
+    /* gap: 80px;
     position: absolute;
-    top: 100px;
+    top: 10%; */
 }
 
 .titlte {
@@ -213,6 +253,13 @@ header {
     display: flex;
     flex-flow: column;
     gap: 40px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 150px; */
+    margin-top: 80px;
 }
 
 /* //////////////////////// our-direction //////////////////////////////////*/
@@ -247,7 +294,7 @@ header {
 }
 
 .description-project {
-    padding: 25px;
+    padding: 25px 15px;
 }
 
 .all-project-imgs {
@@ -257,10 +304,40 @@ header {
 /* //////////////////////////////// portfolio //////////////////////////////*/
 
 .text-on-img {
-    position: absolute;
-    top: 80px;
+    /* position: absolute; */
+    /* top: 80px; */
+    text-align: center;
     transition: .5s;
     cursor: pointer;
+}
+
+.imgs {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+
+.imgs-moscow-city {
+    /* width: 100%;
+    height: 100%; */
+    background-image: url("./img/teploprofi.pro-neva7-darken.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.imgs-veshki {
+    background-image: url("./img/teploprofi-instalation-veski-for-main-darken.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.imgs-sidney {
+    background-image: url("./img/teploprofi-instalation-sidney-main-darken.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .link-text-on-img {
@@ -271,8 +348,8 @@ header {
     font-size: 35px;
     color: var(--color-for-text);
     font-weight: bold;
-    margin: 0 0 20px 70px;
-    text-align: center;
+    /* margin: 0 0 20px 70px; */
+    /* text-align: center; */
 }
 
 .text-image {
@@ -280,7 +357,8 @@ header {
     color: var(--color-for-text);
     font-weight: bold;
     border: 2px solid var(--color-for-text);
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    margin: 10px 50px;
     padding: 5px 30px;
     border-radius: 10px;
 }
@@ -294,11 +372,11 @@ header {
     margin-bottom: 50px;
 }
 
-.list {
+/* .list {
     display: flex;
     gap: 150px;
     padding: 0 50px;
-}
+} */
 
 .our-work {
     text-align: center;
@@ -315,15 +393,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 15px;
-}
-
-.imgs {
-    width: 350px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
 }
 
 .all-photo {
@@ -342,6 +413,72 @@ header {
     transform: scale(1.3);
 }
 
+/* ///////////////////// professional-instalation ///////////// */
+
+.professional-instalation {
+    padding: 0 50px 50px 50px;
+}
+
+.title-professional-instalation {
+    margin-bottom: 50px;
+}
+
+.text-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color-for-text-gray);
+}
+
+.ideal-collector {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    color: var(--color-for-text-gray);
+}
+
+.images-and-description {
+    display: flex;
+}
+
+.image-about-us {
+    border-radius: 15px;
+}
+
+.all-sides-images {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.left-right-divs {
+    display: flex;
+    /* gap: 10px; */
+    margin-bottom: 35px;
+}
+
+.underscore {
+    border-bottom: 1px solid var(--color-for-text-gray);
+}
+
+.left-side, .right-side {
+    padding: 70px 0;
+}
+
+.text-for-sides {
+    padding-left: 10px;
+}
+
+.all-imgs {
+    display: flex;
+    align-items: center;
+}
+
+.main-words {
+    font-weight: bold;
+    font-size: 17px;
+}
+
 /* ///////////////////////// contact-FORM //////////////////////*/
 
 .contact-us {
@@ -357,10 +494,11 @@ header {
 }
 
 .form-contact-with-us {
-    width: 550px;
+    width: 500px;
     height: 600px;
     background-color: var(--color-for-text-gray);
     border-radius: 15px;
+    padding: 0 30px;
 }
 
 .title-form {
@@ -377,7 +515,7 @@ header {
 
 .text-contact {
     text-align: center;
-    padding: 50px 30px;
+    padding: 50px 0;
     font-size: 22px;
     color: var(--color-for-text);
     font-weight: bold;
@@ -386,8 +524,7 @@ header {
 input {
     width: 300px;
     height: 50px;
-    margin-left: 25px;
-    padding-left: 25px;
+    padding-left: 8px;
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -437,7 +574,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .radio-input {
-    margin: 0 25px 40px;
+    margin-bottom: 30px;
 }
 
 .all-method {
@@ -572,9 +709,9 @@ footer {
 
 /* ////////////////////////// adaptiv ////////////////////////////////// */
 @media (max-width: 1050px) {
-    header {
+    /* header {
         padding: 15px 5px;
-    }
+    } */
 
     .link-portfolio {
         padding: 0 15px;
@@ -615,13 +752,17 @@ footer {
         gap: 3px;
     }
 
-    input {
+    /* input {
         width: 250px;
         margin-left: 10px;
-    }
+    } */
 
     .button-send {
         width: 250px;
+    }
+
+    .input-phone {
+        margin-bottom: 50px;
     }
 }
 
@@ -642,9 +783,8 @@ footer {
         gap: 3px;
     }
 
-    input {
-        width: 250px;
-        margin-left: 10px;
+    .input-phone {
+        margin-bottom: 50px;
     }
 
     .button-send {
@@ -685,11 +825,23 @@ footer {
     .text-img {
         font-size: 35px;
     }
+
+    .img-contact-form {
+        width: 470px;
+    }
+
+    .input-phone {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 470px) {
     .text-img {
         font-size: 30px;
+    }
+
+    .input-phone {
+        margin-bottom: 50px;
     }
 }
 
@@ -709,5 +861,9 @@ footer {
 
     .all-text-short {
         font-size: 15px;
+    }
+
+    .img-contact-form {
+        width: 450px;
     }
 }

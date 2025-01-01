@@ -22,12 +22,10 @@ function createPaginationCircle() {
 function addPagination() {
     slide.forEach(createPaginationCircle);
     paginationCircle[0].classList.add('active');
-}
-
-function changePaginationSlide() {
     paginationCircle.forEach((circle, index) => {
         circle.addEventListener('click', () => changeSlide(index));
     })
+
 }
 
 function removeActiveClass() {
@@ -71,7 +69,6 @@ function previousSlide() {
 }
 
 function init() {
-    changePaginationSlide();
     addPagination();
     arrowLeft.addEventListener('click', previousSlide);
     arrowRight.addEventListener('click', nextSlide);
