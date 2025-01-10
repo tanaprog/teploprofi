@@ -9,7 +9,6 @@
     --copyright-color: #141414;
     --color-for-input-error: rgb(250, 10, 10);
     --copyright-color-text: #d4d4d4;
-
 }
 
 * {
@@ -79,10 +78,6 @@ header {
 
 /*  /////////////////////    Header    /////////////////////  */
 
-/* .image-main-img {
-    position: relative;
-} */
-
 .image {
     background-image: url("./img/teploprofi-pro-main.jpg");
     background-repeat: no-repeat;
@@ -100,36 +95,6 @@ header {
     justify-content: center;
 }
 
-/* .main-img {
-    width: 100%;
-    filter: brightness(30%);
-} */
-
-/* .text-description-image {
-    position: absolute;
-    margin-top: 20px;
-    top: 280px;
-    top: 50%;
-} */
-
-/* .text-description-image {
-    background-image: url("./img/teploprofi_pro-main_foto.jpg");
-    filter: brightness(25%);
-    position: absolute;
-    top: 280px;
-    height: 100%;
-} */
-
-/* .logo-description-image {
-    position: absolute;
-    top: 120px;
-    top: 25%;
-} */
-
-/* .description-image {
-    padding: 50px;
-} */
-
 .image-logo {
     width: 350px;
 }
@@ -138,16 +103,11 @@ header {
     color: var(--background-color-yellow);
     font-family: var(--font-for-text);
     font-size: 50px;
-    /* letter-spacing: 1px; */
 }
 
 .short-description {
     display: flex;
     justify-content: space-between;
-    /* gap: 200px;
-    position: absolute;
-    top: 520px;
-    top: 90%; */
 }
 
 .div-circle {
@@ -194,10 +154,6 @@ header {
     font-weight: bold;
 }
 
-/* .image-about-us {
-    width: 600px;
-} */
-
 .description {
     font-size: 18px;
 }
@@ -208,24 +164,13 @@ header {
     background-image: url("./img/teploprofi-монтаж-отопления.jpg");
     background-repeat: no-repeat;
     width: 100%;
-    /* display: flex; */
-    /* flex-flow: column;
-    position: relative; */
 }
-
-
-/* .img-why-teploprofi {
-    filter: brightness(40%);
-} */
 
 .blocks-why-teploprofi {
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding: 100px 50px;
-    /* gap: 80px;
-    position: absolute;
-    top: 10%; */
 }
 
 .titlte {
@@ -258,7 +203,6 @@ header {
 .list {
     display: flex;
     justify-content: space-between;
-    /* gap: 150px; */
     margin-top: 80px;
 }
 
@@ -285,6 +229,7 @@ header {
     border: 2px solid var(--color-for-text-gray);
     padding: 3px;
     border-radius: 15px;
+    width: 250px;
 }
 
 .all-title-direction {
@@ -304,8 +249,6 @@ header {
 /* //////////////////////////////// portfolio //////////////////////////////*/
 
 .text-on-img {
-    /* position: absolute; */
-    /* top: 80px; */
     text-align: center;
     transition: .5s;
     cursor: pointer;
@@ -316,13 +259,10 @@ header {
     align-items: center;
     width: 350px;
     height: 300px;
-    /* overflow: hidden; */
-    /* position: relative; */
+    border-radius: 15px;
 }
 
 .imgs-moscow-city {
-    /* width: 100%;
-    height: 100%; */
     background-image: url("./img/teploprofi.pro-neva7-darken.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -348,8 +288,6 @@ header {
     font-size: 35px;
     color: var(--color-for-text);
     font-weight: bold;
-    /* margin: 0 0 20px 70px; */
-    /* text-align: center; */
 }
 
 .text-image {
@@ -357,7 +295,6 @@ header {
     color: var(--color-for-text);
     font-weight: bold;
     border: 2px solid var(--color-for-text);
-    /* margin-left: 70px; */
     margin: 10px 50px;
     padding: 5px 30px;
     border-radius: 10px;
@@ -371,12 +308,6 @@ header {
 .title-portfolio {
     margin-bottom: 50px;
 }
-
-/* .list {
-    display: flex;
-    gap: 150px;
-    padding: 0 50px;
-} */
 
 .our-work {
     text-align: center;
@@ -393,7 +324,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     gap: 15px;
 }
 
@@ -405,10 +335,6 @@ header {
     transition: .5s;
 }
 
-/* .imgs:hover .all-photo {
-    transform: scale(1.3);
-} */
-
 .text-on-img:hover {
     transform: scale(1.3);
 }
@@ -416,7 +342,7 @@ header {
 /* ///////////////////// professional-instalation ///////////// */
 
 .professional-instalation {
-    padding: 0 50px 50px 50px;
+    padding: 0 50px;
 }
 
 .title-professional-instalation {
@@ -453,7 +379,6 @@ header {
 
 .left-right-divs {
     display: flex;
-    /* gap: 10px; */
     margin-bottom: 35px;
 }
 
@@ -461,8 +386,9 @@ header {
     border-bottom: 1px solid var(--color-for-text-gray);
 }
 
-.left-side, .right-side {
-    padding: 70px 0;
+.left-side,
+.right-side {
+    padding: 70px 0 40px 0;
 }
 
 .text-for-sides {
@@ -477,6 +403,100 @@ header {
 .main-words {
     font-weight: bold;
     font-size: 17px;
+}
+
+/* //////////////////////////// questions-answers //////////////////////////// */
+
+.questions-answers {
+    padding: 50px;
+}
+
+.text-often-questions {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color-for-text-gray);
+    padding-bottom: 50px;
+}
+
+.faq {
+    border-bottom: 2px solid var(--background-color-yellow);
+    padding: 0 30px 35px 30px;
+    cursor: pointer;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.questions h3 {
+    font-size: 25px;
+    color: var(--color-for-text-gray);
+    font-family: var(--font-for-text);
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p {
+    color: var(--color-for-text-gray);
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+}
+
+.span-answer {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: var(--font-for-text);
+    color: var(--color-for-text-gray);
+    border: 1px solid var(--background-color-yellow);
+    background-color: var(--background-color-yellow);
+    padding: 0 25px;
+    border-radius: 10px;
+}
+
+/* //////////////////// your-question /////////////////////////// */
+
+.your-question {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    background-color: var(--color-for-text-gray);
+    margin: 50px auto;
+    border-radius: 15px;
+}
+
+.text-your-question {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: var(--font-for-text);
+    color: var(--background-color-yellow);
+    padding: 30px;
+    text-align: center;
+}
+
+.input-question,
+.button-question {
+    margin-bottom: 25px;
+}
+
+.form-question {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-your-question {
+    border-radius: 15px;
 }
 
 /* ///////////////////////// contact-FORM //////////////////////*/
@@ -709,9 +729,6 @@ footer {
 
 /* ////////////////////////// adaptiv ////////////////////////////////// */
 @media (max-width: 1050px) {
-    /* header {
-        padding: 15px 5px;
-    } */
 
     .link-portfolio {
         padding: 0 15px;
@@ -742,6 +759,7 @@ footer {
     .list {
         gap: 40px;
         padding: 0 10px;
+        margin-top: 10px;
     }
 
     .our-direction {
@@ -751,11 +769,6 @@ footer {
     .our-direction-text-img {
         gap: 3px;
     }
-
-    /* input {
-        width: 250px;
-        margin-left: 10px;
-    } */
 
     .button-send {
         width: 250px;
@@ -767,6 +780,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
     h1 {
         font-size: 25px;
     }
@@ -795,6 +809,10 @@ footer {
         font-size: 40px;
     }
 
+    .list {
+        margin-top: 5px;
+    }
+
     .logo-description-image {
         top: 80px;
     }
@@ -815,6 +833,11 @@ footer {
     .all-text-short {
         font-size: 18px;
     }
+
+    .questions h3,
+    .span-answer {
+        font-size: 23px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -833,6 +856,20 @@ footer {
     .input-phone {
         margin-bottom: 50px;
     }
+
+    .image-about-us {
+        width: 375px;
+    }
+
+    .left-side,
+    .right-side {
+        padding: 10px 0;
+    }
+
+    .questions h3,
+    .span-answer {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 470px) {
@@ -842,6 +879,11 @@ footer {
 
     .input-phone {
         margin-bottom: 50px;
+    }
+
+    .questions h3,
+    .span-answer {
+        font-size: 20px;
     }
 }
 
@@ -865,5 +907,10 @@ footer {
 
     .img-contact-form {
         width: 450px;
+    }
+
+    .questions h3,
+    .span-answer {
+        font-size: 20px;
     }
 }
