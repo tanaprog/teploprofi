@@ -198,6 +198,11 @@ header {
     column-gap: 18px;
 }
 
+.img-dzen {
+    width: 40px;
+    height: 40px;
+}
+
 /* ///////////////////////// footer //////////////////////*/
 
 footer {
