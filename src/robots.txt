@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /
+
+Sitemap: https://teploprofi.pro/sitemap.xml
+Host: https://teploprofi.pro

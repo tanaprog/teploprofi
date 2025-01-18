@@ -1,6 +1,6 @@
 const faqs = document.querySelectorAll('.faq')
 
-function showAnswer (){
+function showAnswer() {
     faqs.forEach(faq => {
         faq.addEventListener('click', () => {
             faq.classList.toggle("active")

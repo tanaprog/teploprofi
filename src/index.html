@@ -273,7 +273,7 @@
                         </div>
                     </a>
 
-                    <a class="link-text-on-img" href="teploprofi-sidney.html">
+                    <a class="link-text-on-img" href="portfolio-sidney.html">
                         <div class="imgs imgs-sidney">
                             <div class="text-on-img">
                                 <div class="text-name">
@@ -308,7 +308,13 @@
                         <p class="text-contact">Мы свяжемся с Вами любым удобным <br> для Вас способом</p>
                     </div>
 
-                    <form id="form" method="POST"> <!--action="/apply/"-->
+                    <form id="form" class="uniForm form-body">
+
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="https://teploprofi.pro">
+                        <input type="hidden" name="admin_email" value="teploprofi.pro@gmail.com">
+                        <input type="hidden" name="form_subject" value="Form middle">
+                        <!-- END Hidden Required Fields -->
 
                         <div class="radio-input">
                             <div class="phone-choice">
@@ -324,9 +330,9 @@
                                 <label for="telegram">Telegram</label>
                             </div>
                         </div>
-                        <input class="input-name _req" name="name" id="name" type="text" autocomplete="off"
+                        <input class="input-name require" name="name" id="name" type="text" autocomplete="off"
                             placeholder="Ваше имя">
-                        <input class="input-phone _req" name="phone" id="phone" type="number" autocomplete="off"
+                        <input class="input-phone require" name="phone" id="phone" type="number" autocomplete="off"
                             placeholder="+7 (___) ___-__-__">
 
                         <div class="contact-button">
@@ -583,13 +589,20 @@
                     <p class="text-your-question">Не нашли ответ на свой вопрос</p>
                 </div>
 
-                <form id="form" class="form-question" method="POST">
-                    <input class="input-question input-name-question _req" name="name" id="name" type="text"
+                <form id="form" class="uniForm form-question">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="https://teploprofi.pro">
+                    <input type="hidden" name="admin_email" value="teploprofi.pro@gmail.com">
+                    <input type="hidden" name="form_subject" value="Form footer">
+                    <!-- END Hidden Required Fields -->
+
+                    <input class="input-question input-name-question" name="name" id="name" type="text"
                         autocomplete="off" placeholder="Ваше имя">
-                    <input class="input-question input-phone-question _req" name="phone" id="phone" type="number"
+                    <input class="input-question input-phone-question" name="phone" id="phone" type="number"
                         autocomplete="off" placeholder="+7 (___) ___-__-__">
-                    <input class="input-question input-questions-question _req" name="question" id="question"
-                        type="text" autocomplete="off" placeholder="Напишите Ваш вопрос">
+                    <input class="input-question input-questions-question" name="question" id="question" type="text"
+                        autocomplete="off" placeholder="Напишите Ваш вопрос">
                     <div class="button-get-advice">
                         <button class="button-send button-question" type="submit">Получить консультацию</button>
                     </div>
@@ -637,27 +650,27 @@
 
                 <div class="whatsapp-icon all-images-contacts">
                     <div class="whatsapp-img">
-                        <a href="https://wa.me/message/M2K6BO5CN5HHD1"><img class="all-icons-contacts"
+                        <a href="https://wa.me/message/M2K6BO5CN5HHD1" target="_blank"><img class="all-icons-contacts"
                                 src="./img/teploprofi-whats-app.svg" alt="whatsApp teploprofi"></a>
                     </div>
                     <div class="title-whats-app all-title-contacts">
-                        <a class="all-links-icon" href="https://wa.me/message/M2K6BO5CN5HHD1">WhatsApp</a>
+                        <a class="all-links-icon" href="https://wa.me/message/M2K6BO5CN5HHD1" target="_blank">WhatsApp</a>
                     </div>
                     <div class="whatsapp-number">
-                        <a class="all-links-icon" href="https://wa.me/message/M2K6BO5CN5HHD1">+7 (977) 578-66-46</a>
+                        <a class="all-links-icon" href="https://wa.me/message/M2K6BO5CN5HHD1" target="_blank">+7 (977) 578-66-46</a>
                     </div>
                 </div>
 
                 <div class="telegram-icon all-images-contacts">
                     <div class="telegram-img">
-                        <a href="https://t.me/teploprofipro"><img class="all-icons-contacts"
+                        <a href="https://t.me/teploprofipro" target="_blank"><img class="all-icons-contacts"
                                 src="./img/telegram-teplo-profi.svg" alt="telegram teploprofi"></a>
                     </div>
                     <div class="title-telegram all-title-contacts">
-                        <a class="all-links-icon" href="https://t.me/teploprofipro">Telegram</a>
+                        <a class="all-links-icon" href="https://t.me/teploprofipro" target="_blank">Telegram</a>
                     </div>
                     <div class="telegram-number">
-                        <a class="all-links-icon" href="https://t.me/teploprofipro">+7 (977) 578-66-46</a>
+                        <a class="all-links-icon" href="https://t.me/teploprofipro" target="_blank">+7 (977) 578-66-46</a>
                     </div>
                 </div>
             </div>
@@ -715,7 +728,8 @@
         <p>©2024 Сайт разработан Е. Тананаевой</p>
     </div>
 
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
