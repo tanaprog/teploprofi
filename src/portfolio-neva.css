@@ -17,7 +17,7 @@
 }
 
 body {
-    min-width: 600px;
+    min-width: 700px;
 }
 
 main {
@@ -41,6 +41,12 @@ header {
     height: 70px;
 }
 
+.phone-header {
+    color: var(--color-for-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .all-elements__logo {
     display: flex;
     align-items: center;
@@ -59,14 +65,14 @@ header {
 }
 
 .link {
-    color: rgb(32, 32, 32);
-    font-size: 18px;
+    color: var(--color-for-text);
+    font-size: 19px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .link:hover {
-    color: var(--color-for-text);
+    color: var(--background-color-yellow);
 }
 
 .link-portfolio {
@@ -88,9 +94,24 @@ header {
 }
 
 .all-elements__number-phone {
+    text-align: center;
+}
+
+.phone-header {
     color: var(--color-for-text);
     font-size: 19px;
     font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.phone-header:hover {
+    color: var(--background-color-yellow);
+}
+
+.time-contact {
+    color: var(--color-for-text);
+    font-size: 13px;
 }
 
 /*      Header      */
@@ -256,6 +277,18 @@ footer {
     height: 40px;
 }
 
+.mail-footer {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-for-text);
+}
+
+.phone-footer {
+    color: var(--color-for-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* ///////////////////////////// adattiv //////////////////////////// */
 
 @media (max-width: 1050px) {
@@ -270,6 +303,14 @@ footer {
 
     .portfolio-one {
         padding: 5px 10px;
+    }
+
+    .h2-logo-descripnion {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 15px 5px;
     }
 }
 
@@ -290,6 +331,7 @@ footer {
 
 @media (max-width: 768px) {
     .hpoto-and-text {
+        flex-direction: column;
         padding: 20px 10px;
     }
 
@@ -300,10 +342,12 @@ footer {
 
     .photo-portfolio-one {
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
     .portfolio-one {
+        margin-bottom: 0;
         padding: 5px 10px;
     }
 
@@ -313,6 +357,27 @@ footer {
     }
 
     .text-one {
+        font-size: 15px;
+    }
+
+    .h2-logo-descripnion {
+        font-size: 13px;
+        width: 150px;
+    }
+
+    .slide {
+        padding: 0 15px;
+    }
+
+    .all-elements__menu {
+        flex-direction: column;
+    }
+
+    .link-portfolio {
+        padding: 0;
+    }
+
+    .link {
         font-size: 15px;
     }
 }
@@ -376,5 +441,17 @@ footer {
 
     .main-photo-port-one {
         margin-left: 40px;
+    }
+
+    .h2-logo-descripnion {
+        font-size: 11px;
+    }
+
+    .all-networks {
+        gap: 7px;
+    }
+
+    .all-contacts {
+        font-size: 16px;
     }
 }

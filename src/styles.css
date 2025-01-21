@@ -18,6 +18,7 @@
 
 body {
     min-width: 1100px;
+    max-width: 1350px;
 }
 
 main {
@@ -42,14 +43,14 @@ header {
 }
 
 .link {
-    color: var(--color-for-text-dark);
+    color: var(--color-for-text);
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .link:hover {
-    color: var(--color-for-text);
+    color: var(--background-color-yellow);
 }
 
 .link-portfolio {
@@ -71,9 +72,20 @@ header {
 }
 
 .all-elements__number-phone {
+    text-align: center;
+}
+
+.phone-header {
     color: var(--color-for-text);
     font-size: 19px;
     font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.time-contact {
+    color: var(--color-for-text);
+    font-size: 13px;
 }
 
 /*  /////////////////////    Header    /////////////////////  */
@@ -707,6 +719,12 @@ input.error {
     height: 60px;
 }
 
+.mail-phone-our-contact {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-for-text-dark);
+}
+
 /* //////////////////////// footer ////////////////////////////*/
 
 footer {
@@ -745,6 +763,18 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 13px;
+}
+
+.mail-footer {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-for-text);
+}
+
+.phone-footer {
+    color: var(--color-for-text);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -798,6 +828,10 @@ footer {
     .input-phone {
         margin-bottom: 50px;
     }
+
+    /* .description-project-water{
+        padding: 17px 15px;
+    } */
 }
 
 @media (max-width: 992px) {
@@ -859,6 +893,10 @@ footer {
     .span-answer {
         font-size: 23px;
     }
+
+    /* .description-project-water{
+        padding: 17px 15px;
+    } */
 }
 
 @media (max-width: 520px) {
@@ -905,6 +943,10 @@ footer {
     .questions h3,
     .span-answer {
         font-size: 20px;
+    }
+
+    .description-project-water{
+        padding: 17px 15px;
     }
 }
 
