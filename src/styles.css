@@ -540,7 +540,7 @@ header {
 }
 
 .img-contact-form {
-    width: 550px;
+    width: 500px;
     height: 600px;
     border-radius: 15px;
 }
@@ -780,58 +780,53 @@ footer {
 
 /* ////////////////////////// adaptiv ////////////////////////////////// */
 @media (max-width: 1050px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
 
-    .link-portfolio {
-        padding: 0 15px;
+    .all-project-imgs {
+        width: 175px;
+    }
+
+    .image-logo {
+        width: 320px;
+    }
+
+    .text-img {
+        font-size: 45px;
+    }
+
+    .imgs {
+        width: 320px;
+    }
+
+    .about {
+        align-items: center;
+        padding: 50px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .left-side,
+    .right-side {
+        padding: 0;
+    }
+
+    .description-project-water {
+        padding: 17px 15px;
+    }
+
+    .description-project-plumbing {
+        padding: 15px 15px;
     }
 
     .about-description {
         gap: 10px;
-        padding: 15px 20px;
+        padding: 15px;
     }
-
-    .abou-ttitle {
-        font-size: 40px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .blocks-why-teploprofi {
-        top: 30px;
-        gap: 45px;
-    }
-
-    .list {
-        gap: 40px;
-        padding: 0 10px;
-        margin-top: 10px;
-    }
-
-    .our-direction {
-        padding: 50px 5px;
-    }
-
-    .our-direction-text-img {
-        gap: 3px;
-    }
-
-    .button-send {
-        width: 250px;
-    }
-
-    .input-phone {
-        margin-bottom: 50px;
-    }
-
-    /* .description-project-water{
-        padding: 17px 15px;
-    } */
 }
 
 @media (max-width: 992px) {
@@ -894,86 +889,962 @@ footer {
         font-size: 23px;
     }
 
-    /* .description-project-water{
+    .description-project-water {
         padding: 17px 15px;
-    } */
+    }
 }
 
-@media (max-width: 520px) {
-    .image-logo {
+@media (max-width: 853px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    .all-project-imgs {
+        width: 85%;
+    }
+
+    .our-direction,
+    .about {
+        padding: 50px 2px;
+    }
+
+    .list {
+        margin-top: 60px;
+    }
+
+    .blocks-why-teploprofi {
+        padding: 80px 10px;
+    }
+
+    .about-h1,
+    .description {
+        font-size: 13px;
+    }
+
+    .all-advantages {
+        font-size: 15px;
         width: 250px;
     }
 
-    .text-img {
-        font-size: 35px;
+    .all-names {
+        gap: 25px;
     }
 
-    .img-contact-form {
-        width: 470px;
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
-    .input-phone {
+    .imgs {
+        width: 550px;
+        height: 500px;
+    }
+
+    .questions-answers {
+        padding: 0 50px 50px;
+    }
+
+    .text-on-img {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .text-contact {
+        font-size: 28px;
+    }
+
+    .images-and-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-for-sides {
+        font-size: 25px;
+    }
+
+    .main-words {
+        font-size: 25px;
+    }
+
+    .right-side {
+        padding: 40px 0;
+    }
+
+    .your-question {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         margin-bottom: 50px;
     }
 
-    .image-about-us {
-        width: 375px;
+    .image-your-question {
+        width: 100%;
     }
 
-    .left-side,
-    .right-side {
+    .text-your-question {
+        font-size: 35px;
+    }
+
+    .form-question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-project-water {
+        padding: 20px 15px;
+    }
+
+    .description-project-plumbing {
+        padding: 7px 15px;
+    }
+
+    .description-water {
+        padding: 35px 15px;
+    }
+
+    .img-contact-form {
+        width: 550px;
+        height: 650px;
+    }
+}
+
+@media (max-width: 540px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .image-logo {
+        width: 30%;
+    }
+
+    .description-image {
+        padding: 15px;
+    }
+
+    .text-img {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    .div-circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .text-description-image {
+        margin-bottom: 25px;
+    }
+
+    .all-text-short {
+        font-size: 13px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .link {
+        font-size: 10px;
+    }
+
+    .link-portfolio {
+        padding: 0;
+    }
+
+    .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+    .phone-header {
+        font-size: 12px;
+    }
+
+    .time-contact {
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
         padding: 10px 0;
+    }
+
+    .blocks-why-teploprofi {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .titlte {
+        font-size: 20px;
+    }
+
+    .all-titles {
+        font-size: 30px;
+    }
+
+    .all-names {
+        gap: 10px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-advantages {
+        font-size: 19px;
+    }
+
+    .our-direction {
+        padding: 50px 5px;
+    }
+
+    .title-our-direction {
+        font-size: 25px;
+    }
+
+    .our-direction-text-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us {
+        padding: 20px 0;
+    }
+
+    .title-form {
+        font-size: 25px;
+        padding: 0 5px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img-contact-form {
+        width: 100%;
+    }
+
+    .form-contact-with-us {
+        width: 100%;
+        padding: 0;
+    }
+
+    .radio-input {
+        padding-left: 25px;
+    }
+
+    input {
+        margin-left: 25px;
+    }
+
+    .text-title {
+        font-size: 30px;
+    }
+
+    .title-professional-instalation {
+        margin-bottom: 30px;
+    }
+
+    .images-and-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .professional-instalation {
+        padding: 0;
+    }
+
+    .questions-answers {
+        padding: 0;
+    }
+
+    .text-often-questions {
+        padding-bottom: 30px;
+        font-size: 32px;
+    }
+
+    .your-question {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image-your-question {
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .contacts-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contacts-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .all-title-contacts {
+        font-size: 25px;
+    }
+
+    .text-networks {
+        padding: 40px 0 15px 0;
+    }
+
+    .all-networks {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .our-social-networks {
+        padding: 0;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+
+    .logo-for-footer {
+        height: 60px;
+    }
+
+    .all-contacts {
+        font-size: 15px;
     }
 
     .questions h3,
     .span-answer {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    .right-side {
+        padding: 50px 0;
+    }
+
+    .left-side {
+        padding: 30px 0;
+    }
+
+    .ideal-collector {
+        padding: 20px 6px 0;
+    }
+
+    .image-about-us {
+        width: 100%;
+    }
+
+    .text-contact {
+        font-size: 28px;
+        padding: 35px 0;
+    }
+
+    label {
+        font-size: 21px;
+    }
+
+    .all-title-direction {
+        font-size: 25px;
+    }
+
+    .description-project {
+        font-size: 20px;
+    }
+
+    .text-for-sides {
+        font-size: 18px;
+    }
+
+    .input-question {
+        width: 290px;
+        margin-left: 2px;
     }
 }
 
 @media (max-width: 470px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .image-logo {
+        width: 40%;
+    }
+
+    .description-image {
+        padding: 15px;
+    }
+
     .text-img {
+        font-size: 20px;
+    }
+
+    .div-circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .text-description-image {
+        margin-bottom: 25px;
+    }
+
+    .all-text-short {
+        font-size: 45%;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .link {
+        font-size: 10px;
+    }
+
+    .link-portfolio {
+        padding: 0;
+    }
+
+    .all-elements__icons {
+        gap: 2px;
+    }
+
+    .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+    .phone-header {
+        font-size: 12px;
+    }
+
+    .time-contact {
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .abou-ttitle {
+        font-size: 40px;
+    }
+
+    .about-h1 {
+        font-size: 15px;
+    }
+
+    .blocks-why-teploprofi {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .titlte {
+        font-size: 20px;
+    }
+
+    .all-titles {
         font-size: 30px;
     }
 
-    .input-phone {
-        margin-bottom: 50px;
+    .all-names {
+        gap: 10px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-advantages {
+        font-size: 19px;
+    }
+
+    .our-direction {
+        padding: 10px 5px;
+    }
+
+    .title-our-direction {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .our-direction-text-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+    .our-work {
+        font-size: 30px;
+    }
+
+    .title-portfolio {
+        margin-bottom: 30px;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us {
+        padding: 20px 0;
+    }
+
+    .title-form {
+        font-size: 25px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img-contact-form {
+        width: 100%;
+        height: 500px;
+    }
+
+    .form-contact-with-us {
+        width: 100%;
+        padding: 0;
+    }
+
+    .radio-input {
+        padding-left: 25px;
+    }
+
+    input {
+        margin-left: 25px;
+    }
+
+    .text-title {
+        font-size: 30px;
+    }
+
+    .title-professional-instalation {
+        margin-bottom: 30px;
+    }
+
+    .images-and-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .professional-instalation {
+        padding: 0;
+    }
+
+    .questions-answers {
+        padding: 0;
+    }
+
+    .text-often-questions {
+        padding-bottom: 30px;
+        font-size: 32px;
+    }
+
+    .your-question {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image-your-question {
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .contacts-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contacts-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .all-title-contacts {
+        font-size: 25px;
+    }
+
+    .text-networks {
+        padding: 40px 0 15px 0;
+    }
+
+    .all-networks {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .our-social-networks {
+        padding: 0;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+
+    .logo-for-footer {
+        height: 60px;
+    }
+
+    .all-contacts {
+        font-size: 15px;
     }
 
     .questions h3,
     .span-answer {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .description-project-water{
-        padding: 17px 15px;
+    .right-side {
+        padding: 40px 0;
+    }
+
+    .image-about-us {
+        width: 100%;
+    }
+
+    .input-question {
+        width: 290px;
+        margin-left: 2px;
     }
 }
 
 @media (max-width: 375px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 5px;
+    }
+
     .image-logo {
-        width: 250px;
+        width: 40%;
+    }
+
+    .description-image {
+        padding: 15px;
     }
 
     .text-img {
-        font-size: 30px;
-        letter-spacing: 0;
+        font-size: 20px
     }
 
-    .short-description {
-        top: 400px;
+    .div-circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .text-description-image {
+        margin-bottom: 25px;
     }
 
     .all-text-short {
-        font-size: 15px;
+        font-size: 45%;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .link {
+        font-size: 10px;
+    }
+
+    .link-portfolio {
+        padding: 0;
+    }
+
+    .all-elements__icons {
+        gap: 2px;
+    }
+
+    .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+    .phone-header {
+        font-size: 12px;
+    }
+
+    .time-contact {
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .abou-ttitle {
+        font-size: 35px;
+    }
+
+    .about-h1 {
+        font-size: 13px;
+    }
+
+    .blocks-why-teploprofi {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .titlte {
+        font-size: 20px;
+    }
+
+    .all-titles {
+        font-size: 30px;
+    }
+
+    .all-names {
+        gap: 10px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-advantages {
+        font-size: 19px;
+    }
+
+    .our-direction {
+        padding: 10px 5px;
+    }
+
+    .title-our-direction {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .our-direction-text-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+    .our-work {
+        font-size: 30px;
+    }
+
+    .title-portfolio {
+        margin-bottom: 30px;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us {
+        padding: 20px 0;
+    }
+
+    .title-form {
+        font-size: 25px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .img-contact-form {
-        width: 450px;
+        width: 375px;
+        height: 500px;
+    }
+
+    .form-contact-with-us {
+        width: 100%;
+        padding: 0;
+    }
+
+    .radio-input {
+        padding-left: 25px;
+    }
+
+    input {
+        margin-left: 25px;
+    }
+
+    .text-title {
+        font-size: 30px;
+    }
+
+    .title-professional-instalation {
+        margin-bottom: 30px;
+    }
+
+    .images-and-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .professional-instalation {
+        padding: 0;
+    }
+
+    .questions-answers {
+        padding: 0;
+    }
+
+    .text-often-questions {
+        padding-bottom: 30px;
+        font-size: 32px;
+    }
+
+    .your-question {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image-your-question {
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .contacts-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contacts-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .all-title-contacts {
+        font-size: 25px;
+    }
+
+    .text-networks {
+        padding: 40px 0 15px 0;
+    }
+
+    .all-networks {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .our-social-networks {
+        padding: 0;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+
+    .logo-for-footer {
+        height: 60px;
+    }
+
+    .all-contacts {
+        font-size: 15px;
     }
 
     .questions h3,
     .span-answer {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .right-side {
+        padding: 40px 0;
+    }
+
+    .input-question {
+        width: 290px;
+        margin-left: 2px;
     }
 }

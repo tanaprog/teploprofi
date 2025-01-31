@@ -57,6 +57,7 @@ header {
 
 .all-elements__menu {
     display: flex;
+    gap: 50px;
 }
 
 .h2-logo-descripnion {
@@ -292,166 +293,566 @@ footer {
 /* ///////////////////////////// adattiv //////////////////////////// */
 
 @media (max-width: 1050px) {
-    .hpoto-and-text {
-        padding: 20px 10px;
-    }
-
-    .main-photo-port-one {
-        width: 500px;
-        padding: 5px;
+    body {
+        min-width: 30%;
+        max-width: 100%;
     }
 
     .portfolio-one {
-        padding: 5px 10px;
-    }
-
-    .h2-logo-descripnion {
-        font-size: 15px;
-    }
-
-    header {
-        padding: 15px 5px;
-    }
-}
-
-@media (max-width: 992px) {
-    .hpoto-and-text {
-        padding: 20px 10px;
-    }
-
-    .main-photo-port-one {
-        width: 500px;
-        padding: 5px;
-    }
-
-    .portfolio-one {
-        padding: 5px 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hpoto-and-text {
-        flex-direction: column;
-        padding: 20px 10px;
-    }
-
-    .main-photo-port-one {
-        width: 400px;
-        padding: 5px;
+        padding: 20px 5px;
     }
 
     .photo-portfolio-one {
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 
-    .portfolio-one {
-        margin-bottom: 0;
-        padding: 5px 10px;
+    .text-networks {
+        font-size: 22px;
     }
 
-    .real-works {
+    .contact-text {
         font-size: 20px;
-        padding-bottom: 10px;
     }
 
-    .text-one {
-        font-size: 15px;
+    .all-contacts {
+        font-size: 20px;
     }
 
-    .h2-logo-descripnion {
-        font-size: 13px;
-        width: 150px;
-    }
-
-    .slide {
-        padding: 0 15px;
-    }
-
-    .all-elements__menu {
-        flex-direction: column;
-    }
-
-    .link-portfolio {
-        padding: 0;
-    }
-
-    .link {
+    .copyright {
         font-size: 15px;
     }
 }
 
-@media (max-width: 375px) {
-    header {
-        padding: 15px 5px;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .link {
-        font-size: 15px;
-    }
-
-    .all-elements__number-phone {
-        font-size: 15px;
-    }
-
-    .all-elements__menu {
-        flex-direction: column;
-    }
-
-    .all-elements {
-        gap: 5px;
-    }
-
-    .logo-description {
-        font-size: 11px;
-        width: 100px;
-    }
-
-    .link-portfolio {
-        padding: 0 5px;
+@media (max-width: 992px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
     }
 
     .hpoto-and-text {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .all-elements__menu {
+        gap: 5px;
+    }
+
+    .main-photo-port-one {
+        width: 800px;
         padding: 20px 50px;
     }
 
+    .title-portfplio-one {
+        font-size: 40px;
+    }
+
+    .all-text {
+        font-size: 25px;
+    }
+
+    .real-works {
+        font-size: 30px;
+    }
+
+    .portfolio-one {
+        padding: 25px 45px 0;
+    }
+
+    .text-networks {
+        font-size: 25px;
+    }
+
+    .contact-text {
+        font-size: 20px;
+    }
+
+    .all-contacts {
+        font-size: 20px;
+    }
+
+    .slide {
+        width: 600px;
+        height: 800px;
+        padding: 0 15px;
+    }
+
+    .arrow {
+        width: 30px;
+        height: 30px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 853px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 540px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .all-elements__icons {
+        gap: 10pxpx;
+    }
+
+    .icons {
+        width: 30px;
+        height: 30px;
+    }
+
+    .time-contact {
+        font-size: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .h2-logo-descripnion {
+        font-size: 10px;
+        width: 70px;
+    }
+
+    .all-elements__menu {
+        gap: 5px;
+    }
+
+    .phone-header {
+        font-size: 15px;
+    }
+
+    .hpoto-and-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .main-photo-port-one {
+        width: 540px;
+        padding: 0;
+    }
+
+    .arrow {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+    }
+
     .slider-container {
-        padding: 50px 5px;
+        row-gap: 30px;
+    }
+
+    .title-portfplio-one {
+        font-size: 30px;
+    }
+
+    .slide {
+        width: 350px;
+        height: 500px;
+        padding: 0 15px;
+    }
+
+    .circle-area {
+        column-gap: 10px;
+    }
+
+    .portfolio-one {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .logo-and-contact {
+        gap: 15px;
+    }
+
+    .all-networks {
+        gap: 10px;
+    }
+
+    .contact-text {
+        font-size: 13px;
+    }
+
+    .all-contacts {
+        font-size: 13px;
+    }
+
+    .all-icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .img-dzen {
+        width: 20px;
+        height: 20px;
+    }
+
+    .text-networks {
+        font-size: 15px;
+    }
+
+    .logo-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .our-social-networks {
+        margin: auto 0;
+    }
+
+    .portfolio-one {
+        padding: 20px 25px;
+    }
+
+    .all-text {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 5px;
+        height: 60px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .link {
+        font-size: 10px;
+    }
+
+    .all-elements__icons {
+        gap: 2px;
+    }
+
+    .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+    .time-contact {
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .h2-logo-descripnion {
+        font-size: 7px;
+        width: 50px;
+    }
+
+    .all-elements__menu {
+        gap: 5px;
+    }
+
+    .phone-header {
+        font-size: 12px;
+    }
+
+    .hpoto-and-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .main-photo-port-one {
+        width: 100%;
+        padding: 0;
     }
 
     .arrow {
         width: 15px;
         height: 15px;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .slider-container {
+        row-gap: 30px;
     }
 
     .slide {
-        width: 450px;
-        height: 600px;
-        overflow: hidden;
-        border-radius: 10px;
-        padding: 0 8px;
+        width: 310px;
+        height: 430px;
+        padding: 0 5px;
     }
 
-    .main-photo-port-one {
-        margin-left: 40px;
+    .circle-area {
+        column-gap: 8px;
     }
 
-    .h2-logo-descripnion {
-        font-size: 11px;
+    .portfolio-one {
+        margin-bottom: 0;
+    }
+
+    .logo-and-contact {
+        gap: 15px;
     }
 
     .all-networks {
-        gap: 7px;
+        gap: 10px;
+    }
+
+    .contact-text {
+        font-size: 13px;
     }
 
     .all-contacts {
-        font-size: 16px;
+        font-size: 13px;
+    }
+
+    .all-icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .img-dzen {
+        width: 20px;
+        height: 20px;
+    }
+
+    .text-networks {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .title-portfplio-one {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .real-works {
+        font-size: 20px;
+    }
+
+    .logo-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .our-social-networks {
+        margin: auto 0;
+    }
+
+    .portfolio-one {
+        padding: 20px 25px;
+    }
+
+    .all-text {
+        font-size: 17px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .link {
+        font-size: 10px;
+    }
+
+    .all-elements__icons {
+        gap: 2px;
+    }
+
+    .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+    .time-contact {
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .h2-logo-descripnion {
+        font-size: 7px;
+        width: 50px;
+    }
+
+    .all-elements__menu {
+        gap: 5px;
+    }
+
+    .phone-header {
+        font-size: 12px;
+    }
+
+    .hpoto-and-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .main-photo-port-one {
+        width: 100%;
+        padding: 0;
+    }
+
+    .arrow {
+        width: 15px;
+        height: 15px;
+        padding: 7px;
+    }
+
+    .slider-container {
+        row-gap: 30px;
+    }
+
+    .slide {
+        width: 280px;
+        height: 400px;
+        padding: 0 5px;
+    }
+
+    .circle-area {
+        column-gap: 8px;
+    }
+
+    .portfolio-one {
+        margin-bottom: 0;
+    }
+
+    .logo-and-contact {
+        gap: 15px;
+    }
+
+    .all-networks {
+        gap: 10px;
+    }
+
+    .contact-text {
+        font-size: 13px;
+    }
+
+    .all-contacts {
+        font-size: 11px;
+    }
+
+    .all-icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .img-dzen {
+        width: 20px;
+        height: 20px;
+    }
+
+    .title-portfplio-one {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .real-works {
+        font-size: 20px;
+    }
+
+    .text-networks {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .logo-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .our-social-networks {
+        margin: auto 0;
+    }
+
+    .portfolio-one {
+        padding: 20px 25px;
+    }
+
+    .all-text {
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    .copyright {
+        font-size: 10px;
     }
 }
